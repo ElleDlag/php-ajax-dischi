@@ -21,21 +21,7 @@
             <div class="row d-flex flex-row flex-wrap final">
             </div>
         </div>
-
-        <div class="container-fluid">
-            <div class="row d-flex flex-row flex-wrap selection">
-                <div class="disco-info  col-12">
-                    <form action="" method="GET">
-                        <select name="artist" id="artist" onchange="this.form.submit()">
-                        <option value="all">ALL</option>
-                        </select>
-                    </form>
-                </div>
-            </div>
-        </div>
     </main>
-
-
 
 <!-- template -->
     

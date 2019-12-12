@@ -2,6 +2,7 @@ var param = {
     "async": true,
     "url": 'data.php',
     "method": "GET",
+    "data":'artist'
 }
 function theAjax(settings){
     $.ajax(settings).done(function (response) {
@@ -10,6 +11,11 @@ function theAjax(settings){
 }
 
 function doThis(response){
+    for(key in response){
+        var artistName  = response[key].author;
+        console.log(artistName);
+        $('#artist').append('<option value="'+artistName+'">'+artistName+'</option>')
+    }
     var source = Handlebars.compile($("#tmpl-disco").text());
     for(key in response){
         var data = {
